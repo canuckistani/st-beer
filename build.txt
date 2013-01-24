@@ -34,4 +34,5 @@ js/lib/layouts/footer.js
 js/lib/layouts/view.js
 js/lib/layouts/list.js
 js/lib/layouts/layouts.js
+js/lib/../beers.js
 js/lib/../app.js
