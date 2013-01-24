@@ -1,7 +1,7 @@
 {
   "version": "0.1",
-  "name": "St. Beer!",
-  "description": "A web app for checking what's on tap at St. Augustines.",
+  "name": "My App",
+  "description": "Your new awesome Open Web App",
   "launch_path": "/",
   "icons": {
     "16": "/img/icons/mortar-16.png",
@@ -9,7 +9,7 @@
     "128": "/img/icons/mortar-128.png"
   },
   "developer": {
-    "name": "Jeff Griffiths",
+    "name": "Your Name",
     "url": "http://yourawesomeapp.com"
   },
   "installs_allowed_from": ["*"],
