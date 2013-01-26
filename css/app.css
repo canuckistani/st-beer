@@ -168,3 +168,7 @@ x-view.edit .field {
 .loading {
     background: url(../img/throbber.gif);
 }
+x-listview > header, x-view.detail > header {
+    background: black;
+    color: red;
+}
