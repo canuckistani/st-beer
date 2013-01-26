@@ -1,0 +1,4 @@
+x-listview > header, x-view.detail > header {
+    background: black;
+    color: red;
+}

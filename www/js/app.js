@@ -31,11 +31,13 @@ define(function(require) {
 
     function makeList(data) {
         data.forEach(function(beer) {
-            var tmp = {
-                title: beer.name,
-                desc: beer.description
-            };
-            list.add(tmp);
+            list.add({
+                title: beer.brewer + ' ' + beer.name,
+                desc: beer.description,
+                ibu: beer.ibu,
+                abv: beer.alcohol_by_volume,
+                remaining: Math.round(beer.remaining, 2)
+            });
         });
     }
     
@@ -47,12 +49,13 @@ define(function(require) {
     });
     
     // Detail view
-
     var detail = $('.detail').get(0);
     detail.render = function(item) {
         $('.title', this).html(item.get('title'));
         $('.desc', this).html(item.get('desc'));
-
+        $('.ibu', this).html('IBU: '+item.get('ibu'));
+        $('.abv', this).html('ABV: '+item.get('abv'));
+        $('.remaining', this).html(item.get('remaining')+'% left!');
     };
 
     Beers.refresh(makeList);

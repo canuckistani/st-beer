@@ -7,14 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- Use this installation button to install locally without going
-         through the marketpace (see app.js) -->
-    <!-- <button id="install-btn">Install</button>     -->
 
     <div class="loading">Loading...</div>
     
@@ -22,32 +17,25 @@
       <x-listview class="list">
         <header>
           <button class="refresh">Refresh</button>
-          <h1>My Items</h1>
-          <!-- <button class="add" data-view=".edit" data-animation="slideDown">+</button> -->
+          <h1>St. Augustines Tap List</h1>
         </header>
       </x-listview>
 
       <x-view class="detail">
         <header>
           <h1>Details</h1>
-          <!-- <button data-view="x-view.edit">Edit</button> -->
         </header>
         
         <h1 class="title"></h1>
         <p class="desc"></p>
-        <!-- <p class="date"></p> -->
         <ul class="beer-details">
-          <li class="ibu"><label>IBU</label></li>
-          <li class="abv"><label>ABV</label></li>
-          <li class="remaining"><label>% Remaining</label></li>
+          <li class="ibu"></li>
+          <li class="abv"></li>
+          <li class="remaining"></li>
         </ul>
       </x-view>
     </x-view>
 
-    <!-- Using require.js, a module system for javascript, include the
-         js files. This loads "main.js", which in turn can load other
-         files, all handled by require.js:
-         http://requirejs.org/docs/api.html#jsfiles -->
     <script type="text/javascript" src="js/x-tag.js"></script>
     <script type="text/javascript"
             data-main="js/init.js"
