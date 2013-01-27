@@ -99,9 +99,9 @@ define(function(require) {
         //     fontSize = 11 + (20 - 11) * i;
         // }
 
-        if(text.length > 14) {
-            text = text.slice(0, 11) + '...';
-        }
+        // if(text.length > 14) {
+        //     text = text.slice(0, 11) + '...';
+        // }
 
         title.text(text);
         title.css({ left: margin,

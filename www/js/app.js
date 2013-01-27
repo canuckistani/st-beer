@@ -27,12 +27,13 @@ define(function(require) {
     // List view`
     var list = $('.list').get(0);
 
-
-
     function makeList(data) {
         data.forEach(function(beer) {
             list.add({
-                title: beer.brewer + ' ' + beer.name,
+                title: beer.brewer + " '" + beer.name + "'",
+                name: beer.name,
+                brewer: beer.brewer,
+                location: beer.brewer_location,
                 desc: beer.description,
                 ibu: beer.ibu,
                 abv: beer.alcohol_by_volume,
@@ -40,7 +41,6 @@ define(function(require) {
             });
         });
     }
-    
 
     $('button.refresh', list).click(function() {
         // Fetch beers
@@ -51,7 +51,9 @@ define(function(require) {
     // Detail view
     var detail = $('.detail').get(0);
     detail.render = function(item) {
-        $('.title', this).html(item.get('title'));
+        $('.title', this).html(item.get('name'));
+        $('.brewer', this).html(item.get('brewer'));
+        $('.location', this).html(item.get('location'));
         $('.desc', this).html(item.get('desc'));
         $('.ibu', this).html('IBU: '+item.get('ibu'));
         $('.abv', this).html('ABV: '+item.get('abv'));

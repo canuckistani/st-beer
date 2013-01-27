@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.appcache">
   <head>
     <meta charset="utf-8">
 
@@ -17,16 +17,17 @@
       <x-listview class="list">
         <header>
           <button class="refresh">Refresh</button>
-          <h1>St. Augustines Tap List</h1>
+          <h1>St. Beer</h1>
         </header>
       </x-listview>
 
       <x-view class="detail">
         <header>
-          <h1>Details</h1>
+          <!-- <h1>Details</h1> -->
         </header>
         
         <h1 class="title"></h1>
+        <p><span class="brewer"></span> ( <span class="location"></span> )</p>
         <p class="desc"></p>
         <ul class="beer-details">
           <li class="ibu"></li>
